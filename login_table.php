@@ -8,7 +8,7 @@
       $myusername = mysqli_real_escape_string($db,$_POST['username']);
       $mypassword = mysqli_real_escape_string($db,$_POST['password']); 
       
-      $sql = "SELECT sno FROM table_login WHERE username = '$myusername' and password = '$mypassword'";
+      $sql = "SELECT * FROM table_login WHERE username = '$myusername' and pass = '$mypassword'";
       $result = mysqli_query($db,$sql);
       //$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
       //$active = $row['active'];
@@ -19,7 +19,7 @@
 		
       if($count == 1) {
          //session_register("username");
-         $_SESSION['login_user'] = $myusername;
+         //$_SESSION['login_user'] = $myusername;
          
          header("location: table.php");
       }else {
