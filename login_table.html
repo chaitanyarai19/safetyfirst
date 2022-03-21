@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SafetyFirst - Security is priority</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+
+	<link rel="stylesheet" type="text/css" href="form/login/vendor/bootstrap/css/bootstrap.min.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/vendor/animate/animate.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/vendor/css-hamburgers/hamburgers.min.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/vendor/animsition/css/animsition.min.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/vendor/select2/select2.min.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/vendor/daterangepicker/daterangepicker.css">
+
+	<link rel="stylesheet" type="text/css" href="form/login/css/util.css">
+	<link rel="stylesheet" type="text/css" href="form/login/css/main.css">
+	
+	 <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+	   <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+	
+	<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+
+</head>
+<body>
+
+
+
+	    <!-- Topbar Start -->
+    <div class="container-fluid">
+          <div class="row bg-secondary py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left">
+                <div class="d-inline-flex align-items-center">
+                    <p class="mr-2 mb-2 mb-lg-0 text-white">Opening Time:</p>
+                    <span class="mb-2 mb-lg-0 text-white">*24/7/365</span>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <p class="m-0 mr-1 text-white">Follow Us:</p>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+       <div class="row py-3 px-lg-5">
+            <div class="col-lg-4">
+                <a href="" class="navbar-brand d-none d-lg-block">
+                    <h1 class="m-0 display-5 text-capitalize font-italic"><span class="text-primary">Safety</span>First</h1>
+                </a>
+            </div>
+            <div class="col-lg-8 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex flex-column text-center pr-3 border-right">
+                        <h6>Our Office</h6>
+                        <p class="m-0">Jabalpur, MP, INDIA</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center px-3 border-right">
+                        <h6>Email Us</h6>
+                        <p class="m-0">safetyfirst@gmail.com</p>
+                    </div>
+                    <div class="d-inline-flex flex-column text-center pl-3">
+                        <h6>Call Us</h6>
+                        <p class="m-0">+91- 9988776655</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0 mb-5">
+        <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-0">
+            <a href="" class="navbar-brand d-block d-lg-none">
+                <h1 class="m-0 display-5 text-capitalize font-italic text-white"><span class="text-primary">Safety</span>First</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-4">
+                     <a href="index.html" class="nav-item nav-link">Home</a>
+                    
+                    <a href="login.html" class="nav-item nav-link">Upload Iteam</a>
+					<a href="login_table.html" class="nav-item nav-link active">Search</a>
+					<a href="anonymous.html" class="nav-item nav-link">Report Anonymous</a>
+                    <!--<a href="guard.html" class="nav-item nav-link">Guards</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu text-capitalize">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>-->
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- Navbar End -->
+	
+	<div class="limiter">
+		<div class="container-login100" style="background-image: url('form/login/images/bg-01.jpg');">
+			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+				<div class="login100-form validate-form flex-sb flex-w">
+					<span class="login100-form-title p-b-53">
+						<b>Sign In</b>
+					</span>
+					
+					<div class="p-t-31 p-b-9">
+						<span class="txt1">
+							Enter unique PS ID 
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Email is required">
+						<input class="input100" type="email" id="email" >
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="p-t-13 p-b-9">
+						<span class="txt1">
+							Password
+						</span>
+
+						<a href="#" class="txt2 bo1 m-l-5">
+							Forgot?
+						</a>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input class="input100" type="password" id="password" >
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-login100-form-btn m-t-17">
+						<button class="login100-form-btn" onclick="signIn()" id="signIp">
+							Sign In
+						</button>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+	<script src="js/table_login.js"></script>
+
+	<script src="form/login/js/main.js"></script>
+	
+
+</body>
+</html>

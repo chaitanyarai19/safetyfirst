@@ -29,7 +29,9 @@
 </head>
 <body>
 
-<center><h1><b>Welcome</b> <u><?php echo $login_session; ?></u></h1><br>
+
+
+<center><h1><b>Welcome</b></h1><br>
 <h2><b>Lost Product Details</b></h2>
 </center>
 <div class="form-group pull-left">
@@ -37,7 +39,7 @@
 </div>
 <b><span class="counter pull-left"></span></b>
 <div class="form-group pull-right">
-	<h2 class="search form-control"><a href = "logout.php">Sign Out</a></h2>
+	<h2 class="search form-control" ><button onclick="signOut()" id="signOut">SignOut</button></h2>
 </div>
 
 <table class="table table-hover table-bordered results">
@@ -82,6 +84,11 @@
   </tbody>
 </table>
 
+
+
+
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
@@ -111,6 +118,9 @@
 		  });
 });
 </script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+	<script src="js/table_login.js"></script>
 
 </body>
 </html>
